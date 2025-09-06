@@ -8,7 +8,7 @@ def clean_cpp_code(code):
     # 替換所有非 ASCII 空白字元（如 \u00A0）為普通空格
     code = re.sub(r'[^\S\n\t]', ' ', code)
     
-    # 移除其他可能造成問題的非 ASCII 字符（保留字母、數字、標點和空白）
+    # 移除其他可能造成問題的非 ASCII 字符（保留字母sdfsdfsdfsdfsdf、數字、標點和空白）
     cleaned_code = re.sub(r'[^\x00-\x7F]+', '', code)
     
     return cleaned_code
